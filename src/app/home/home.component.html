@@ -1,0 +1,178 @@
+<div class="toolbar">
+    <div class="header">
+      <div class="person-circle" (click)="navigateToSettings()">
+        <div class="person icon">&#xe83e;</div>
+        <div class="notification"></div>
+      </div>
+      <div class="right-icons">
+        <div class="eye-on icon button" (click)="toggleEye()">&#xe840;</div>
+        <div class="help icon">&#xe8a9;</div>
+        <div class="person-add icon">&#xe83c;</div>
+      </div>
+    </div>
+    <h2>Olá, Jean Pereira</h2>
+  </div>
+  
+<div class="content">
+<section class="account">
+    <div class="content-title">
+    <h1 class="title">Conta</h1>
+    <div class="chevron-right icon-black">&#xe86c;</div>
+    </div>
+    <h1 class="balance" id="balance"><span>R$ 18.824,15</span></h1>
+    <h1 class="balance" id="balance-hide">
+    <span class="hide-balance">●●●●</span>
+    </h1>
+
+    <div class="carousel keen-slider" #sliderRef>
+    <div class="carousel-item keen-slider__slide">
+        <div class="carousel-item-circle" onclick="pixArea()">
+        <div class="pix icon-black">&#xe87f;</div>
+        </div>
+        <span>Àrea Pix</span>
+    </div>
+
+    <div class="carousel-item keen-slider__slide">
+        <div class="carousel-item-circle">
+        <div class="barcode icon-black">&#xe851;</div>
+        </div>
+        <span>Pagar</span>
+    </div>
+
+    <div class="carousel-item keen-slider__slide">
+        <div class="carousel-item-circle">
+        <div class="transferir icon-black">&#xe856;</div>
+        </div>
+        <span>Transfeir</span>
+    </div>
+
+    <div class="carousel-item keen-slider__slide">
+        <div class="carousel-item-circle">
+        <div class="recharge-phone icon-black">&#xe834;</div>
+        </div>
+        <span>Recarga de celular</span>
+    </div>
+
+    <div class="carousel-item keen-slider__slide">
+        <div class="carousel-item-circle">
+        <div class="caixinhas icon-black">&#xe8a1;</div>
+        </div>
+        <span>Caixinhas</span>
+    </div>
+
+    <div class="carousel-item keen-slider__slide">
+        <div class="carousel-item-circle">
+        <div class="cobrar icon-black">&#xe861;</div>
+        </div>
+        <span>Cobrar</span>
+    </div>
+
+    <div class="carousel-item keen-slider__slide">
+        <div class="carousel-item-circle">
+        <div class="depositar icon-black">&#xe855;</div>
+        </div>
+        <span>Depositar</span>
+    </div>
+
+    <div class="carousel-item keen-slider__slide">
+        <div class="carousel-item-circle">
+        <div class="international icon-black">&#xe8aa;</div>
+        </div>
+        <span>Transfeir Internac.</span>
+    </div>
+    </div>
+
+    <div class="card my-cards">
+    <div class="international ic icon-black">&#xe890;</div>
+    <span>Meus cartões</span>
+    </div>
+
+    <div class="cards keen-slider" #cardSliderRef>
+    <div class="card tips keen-slider__slide">
+        <p>
+        <span class="purple">Pix no crédito:</span> transfira sem usar o
+        saldo da conta.
+        </p>
+    </div>
+    <div class="card tips keen-slider__slide">
+        <p>
+        <span class="purple">Meus limites Pix:</span> proteção extra para
+        suas transferências.
+        </p>
+    </div>
+    <div class="card tips keen-slider__slide">
+        <p>
+        <span class="purple">Convide amigos para o Nubank</span>
+        e desbloqueie brasões incríveis.
+        </p>
+    </div>
+    </div>
+</section>
+
+<section class="credit-card-invoice">
+    <div class="content-title">
+    <h1 class="title">Cartão de crédito</h1>
+    <div class="chevron-right icon-black">&#xe86c;</div>
+    </div>
+    <div class="invoice">
+        <h1>Fatura atual</h1>
+        <h2>R$2.485,19</h2>
+        <h3>Limite disponível de R$27.514,81</h3>
+    </div>
+    <h4>
+        <span class="purple">Novo!</span> A fatura nem fechou e já pesou? A
+        gente renegocia parte dele pra você.
+    </h4>
+
+    <div class="button-rounded renegociar">
+        <h1>Renegociar</h1>
+    </div>
+</section>
+<section class="also-follow">
+    <div class="card-small af">
+        <div class="nucoin ic icon-black">&#xe90b;</div>
+        <span>Assistente de pagamentos</span>
+        <div class="card-popup">
+            <h2>Novo</h2>
+        </div>
+    </div>
+</section>
+
+<section class="loan">
+    <div class="content-title">
+        <h1 class="title">Empréstimo</h1>
+        <div class="chevron-right icon-black">&#xe86c;</div>
+    </div>
+    <h1 class="loan-pending">
+    Crie um aviso para saber quando um empréstimo ficar disponivel para
+    você.
+    </h1>
+</section>
+<section class="discover">
+    <div class="content-title">
+        <h1 class="title">Descubra mais</h1>
+    </div>
+
+    <div class="cards keen-slider" #discoverCardSliderRef>
+    <div class="card discover-item keen-slider__slide">
+        <img src="assets/images/approved_ultraviolet_black.png" alt="S" />
+        <p>
+        <span class="purple">Pix no crédito:</span> transfira sem usar o
+        saldo da conta.
+        </p>
+    </div>
+    <div class="card discover-item keen-slider__slide">
+        <p>
+        <span class="purple">Meus limites Pix:</span> proteção extra para
+        suas transferências.
+        </p>
+    </div>
+    <div class="card discover-item keen-slider__slide">
+        <p>
+        <span class="purple">Convide amigos para o Nubank</span>
+        e desbloqueie brasões incríveis.
+        </p>
+    </div>
+    </div>
+</section>
+</div>
