@@ -22,6 +22,7 @@ export class HomeComponent {
 
   slider?: KeenSliderInstance;
   cardSlider?: KeenSliderInstance;
+  discoverCardSlider?: KeenSliderInstance;
 
   constructor(private router: Router, private renderer: Renderer2, private el: ElementRef) {}
 
@@ -48,7 +49,7 @@ export class HomeComponent {
       loop: false,
       mode: 'free',
       slides: {
-        perView: 2,
+        perView: 1.6,
         spacing: 14,
       },
     });

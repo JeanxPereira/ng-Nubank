@@ -1,0 +1,61 @@
+<div class="header-settings">
+    <div class="chevron-left icon-black">
+        &#xe866;
+    </div>
+    <div class="right-icons">
+        <div class="search icon-black">&#xe873;</div>
+        <div class="help icon-black">&#xe8a9;</div>
+    </div>
+</div>
+
+<div #sliderRef2 class="fatura keen-slider" #sliderRef>
+    <div class="fatura-atual keen-slider__slide number-slide1">
+        <div class="content">
+            <h1>Fatura atual</h1>
+            <h2>R$2.485,19</h2>
+            <h3>Limite disponível <span class="card-limit">R$27.514,81</span></h3>
+            <h3>Fecha em <span class="card-closeDate">09 OUT</span></h3>
+            <h3><span class="purple-color">Novo!</span>
+                A fatura nem fechou e já pesou? A gente renegocia parte dela pra você.</h3>
+            <div class="button-rounded renegociar">
+                <h1>Aliviar fatura</h1>
+            </div>
+        </div>
+        <div class="bar"></div>
+    </div>
+    <div class="fatura-atual-details keen-slider__slide number-slide2">
+        <div class="fatura-details">
+            <div class="limite-disponivel-detailed" style="padding-bottom: 10px;">
+                <div class="dot-fatura-green"></div>
+                <div style="align-items: center; padding-left: 5px; ">
+                    <div style="display:flex;">
+                        <h1>R$27.514,81</h1>
+                        <div class="chevron-right icon-black">&#xe86c;</div>
+                    </div>
+                    <h2>Limite disponível</h2>
+                </div>
+            </div>
+        </div>
+        <div class="fatura-details">
+            <div class="fatura-atual-detailed">
+                <div class="dot-fatura-blue"></div>
+                <div style="align-items: center; padding-left: 5px;">
+                    <div style="display:flex;">
+                        <h1>R$2.485,19</h1>
+                        <div class="chevron-right icon-black">&#xe86c;</div>
+                    </div>
+                    <h2>Fatura atual</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dots">
+        <button
+          (click)="slider.moveToIdx(i)"
+          *ngFor="let slide of dotHelper; let i = index"
+          [class]="'dot ' + (i === currentSlide ? 'active' : '')"
+        ></button>
+      </div>
+</div>
+
