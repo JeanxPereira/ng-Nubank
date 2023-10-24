@@ -11,10 +11,12 @@ import KeenSlider, { KeenSliderInstance } from "keen-slider"
 })
 export class CreditCardComponent {
   @ViewChild("sliderRef") sliderRef!: ElementRef<HTMLElement>
+  @ViewChild("carouselSliderRef") carouselSliderRef!: ElementRef<HTMLElement>
 
-  currentSlide: number = 1
+  currentSlide: number = 0
   dotHelper: Array<Number> = []
-  slider: KeenSliderInstance = null
+  slider?: KeenSliderInstance;
+  carouselSlider?: KeenSliderInstance;
 
   ngAfterViewInit() {
     this.slider = new KeenSlider(this.sliderRef.nativeElement, {
@@ -28,13 +30,15 @@ export class CreditCardComponent {
         this.currentSlide = s.track.details.rel
       },
     })
-    this.dotHelper = [
-      ...Array(this.slider.track.details.slides.length).keys(),
-    ]
-  }
 
-  goToSlide(index: number) {
-    this.slider.moveToSlide(index);
+    this.slider = new KeenSlider(this.carouselSliderRef.nativeElement, {
+      loop: false,
+      mode: 'free',
+      slides: {
+        perView: 4.5,
+        spacing: 14,
+      },
+    });
   }
 
   ngOnDestroy() {

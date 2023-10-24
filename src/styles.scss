@@ -96,6 +96,43 @@ h1, h3, h4, span, p {
   }
 }
 
+.card-popup-carousel {
+  height: 20px;
+  width: 40px;
+  border-radius: 4px;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+  margin-left: 14px;
+  margin-right: 14px;
+  position: absolute;
+
+  h2 {
+    font-size: 10px;
+  }
+}
+
+.popup {
+  position: absolute;
+  margin-left: 45px;
+  margin-top: 45px;
+  background-color: rgb(246, 91, 89);
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 10px;
+    color: white;
+  }
+}
+
 .button-rounded {
   height: 50px;
   border-radius: 50px;
@@ -286,5 +323,48 @@ section {
   h1 {
       padding-left: 20px;
       font-size: 16px;
+  }
+}
+
+
+
+
+
+
+
+.carousel-item.keen-slider__slide {
+  min-width: calc((100% / 4.5) - 14px) !important;
+  max-width: calc((100% / 4.5) - 14px) !important;
+}
+
+.carousel {
+  margin: 0;
+  margin-top: 28px;
+  margin-bottom: 28px;
+  padding-left: 28px;
+  width: calc(100% - 28px);
+
+  .carousel-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  
+    span {
+      text-align: center;
+      font-size: 13.5px;
+      font-weight: bold;
+      justify-content: start;
+    }
+  }
+
+  .carousel-item-circle {
+    width: 68px;
+    height: 68px;
+    border-radius: 68px;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
   }
 }

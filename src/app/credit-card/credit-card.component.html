@@ -8,54 +8,135 @@
     </div>
 </div>
 
-<div #sliderRef2 class="fatura keen-slider" #sliderRef>
-    <div class="fatura-atual keen-slider__slide number-slide1">
-        <div class="content">
-            <h1>Fatura atual</h1>
-            <h2>R$2.485,19</h2>
-            <h3>Limite disponível <span class="card-limit">R$27.514,81</span></h3>
-            <h3>Fecha em <span class="card-closeDate">09 OUT</span></h3>
-            <h3><span class="purple-color">Novo!</span>
-                A fatura nem fechou e já pesou? A gente renegocia parte dela pra você.</h3>
-            <div class="button-rounded renegociar">
-                <h1>Aliviar fatura</h1>
-            </div>
-        </div>
-        <div class="bar"></div>
-    </div>
-    <div class="fatura-atual-details keen-slider__slide number-slide2">
-        <div class="fatura-details">
-            <div class="limite-disponivel-detailed" style="padding-bottom: 10px;">
-                <div class="dot-fatura-green"></div>
-                <div style="align-items: center; padding-left: 5px; ">
-                    <div style="display:flex;">
-                        <h1>R$27.514,81</h1>
-                        <div class="chevron-right icon-black">&#xe86c;</div>
+<div class="content">
+    <div>
+        <div #sliderRef2 class="fatura keen-slider" #sliderRef>
+            <div class="fatura-atual keen-slider__slide number-slide1">
+                <div class="content">
+                    <h1>Fatura atual</h1>
+                    <h2>R$2.485,19</h2>
+                    <h3>Limite disponível <span class="card-limit">R$27.514,81</span></h3>
+                    <h3>Fecha em <span class="card-closeDate">09 OUT</span></h3>
+                    <h3><span class="purple-color">Novo!</span>
+                        A fatura nem fechou e já pesou? A gente renegocia parte dela pra você.</h3>
+                    <div class="button-rounded renegociar">
+                        <h1>Aliviar fatura</h1>
                     </div>
-                    <h2>Limite disponível</h2>
                 </div>
+                <div class="bar"></div>
             </div>
-        </div>
-        <div class="fatura-details">
-            <div class="fatura-atual-detailed">
-                <div class="dot-fatura-blue"></div>
-                <div style="align-items: center; padding-left: 5px;">
-                    <div style="display:flex;">
-                        <h1>R$2.485,19</h1>
-                        <div class="chevron-right icon-black">&#xe86c;</div>
+            <div class="fatura-atual-details keen-slider__slide number-slide2">
+                <div class="fatura-details">
+                    <div class="limite-disponivel-detailed" style="padding-bottom: 10px;">
+                        <div class="dot-fatura-green"></div>
+                        <div style="align-items: center; padding-left: 5px; ">
+                            <div style="display:flex;">
+                                <h1>R$27.514,81</h1>
+                                <div class="chevron-right icon-black">&#xe86c;</div>
+                            </div>
+                            <h2>Limite disponível</h2>
+                        </div>
                     </div>
-                    <h2>Fatura atual</h2>
+                </div>
+                <div class="fatura-details">
+                    <div class="fatura-atual-detailed">
+                        <div class="dot-fatura-blue"></div>
+                        <div style="align-items: center; padding-left: 5px;">
+                            <div style="display:flex;">
+                                <h1>R$2.485,19</h1>
+                                <div class="chevron-right icon-black">&#xe86c;</div>
+                            </div>
+                            <h2>Fatura atual</h2>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="dots">
-        <button
-          (click)="slider.moveToIdx(i)"
-          *ngFor="let slide of dotHelper; let i = index"
-          [class]="'dot ' + (i === currentSlide ? 'active' : '')"
-        ></button>
-      </div>
+    <div>
+        <div class="carousel keen-slider" #carouselSliderRef>
+            <div class="carousel-item keen-slider__slide">
+                <div class="carousel-item-circle" onclick="pixArea()">
+                <div class="barcode icon-black">&#xe851;</div>
+                </div>
+                <span>Pagar fatura</span>
+            </div>
+        
+            <div class="carousel-item keen-slider__slide">
+                <div class="carousel-item-circle">
+                <div class="list icon-black">&#xe81d;</div>
+                </div>
+                <span>Resumo de faturas</span>
+            </div>
+        
+            <div class="carousel-item keen-slider__slide">
+                <div class="card-popup-carousel" style="width: 50px; margin-left: 10px;">
+                    <h2>0 bilhete</h2>
+                </div>
+                <div class="carousel-item-circle">
+                <div class="ticket icon-black">&#xe898;</div>
+                </div>
+                <span>N Chances de Ganhar</span>
+            </div>
+        
+            <div class="carousel-item keen-slider__slide">
+                <div class="carousel-item-circle">
+                <div class="limit icon-black">&#xe83a;</div>
+                </div>
+                <span>Meus limites</span>
+            </div>
+        
+            <div class="carousel-item keen-slider__slide">
+                <div class="card-popup-carousel">
+                    <h2>NOVO</h2>
+                </div>
+                <div class="carousel-item-circle">
+                <div class="money icon-black">&#xe89b;</div>
+                </div>
+                <span>Passa tudo no crédito</span>
+            </div>
+        
+            <div class="carousel-item keen-slider__slide">
+                <div class="carousel-item-circle">
+                <div class="card icon-black">&#xe890;</div>
+                </div>
+                <span>Meus cartões</span>
+            </div>
+        
+            <div class="carousel-item keen-slider__slide">
+                <div class="popup">
+                    <h1>10</h1>
+                </div>
+                <div class="carousel-item-circle">
+                <div class="person-add icon-black">&#xe83c;</div>
+                </div>
+                <span>Indicar amigos</span>
+            </div>
+        
+            <div class="carousel-item keen-slider__slide">
+                <div class="carousel-item-circle">
+                <div class="barcode icon-black">&#xe851;</div>
+                </div>
+                <span>Pagar boleto</span>
+            </div>
+        
+            <div class="carousel-item keen-slider__slide">
+                <div class="carousel-item-circle">
+                <div class="automatic icon-black">&#xe90b;</div>
+                </div>
+                <span>Débito automático</span>
+            </div>
+        </div>
+
+        <div class="card-cdi">
+            <div class="cdi ic icon-black">&#xe88f;</div>
+            <h1><span>Aumente seu limite</span> enquanto o seu dinheiro rende 100% do CDI</h1>
+        </div>
+    </div>
 </div>
+
+
+
+
 
