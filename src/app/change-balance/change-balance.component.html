@@ -1,0 +1,25 @@
+<div class="header-settings">
+    <div class="chevron-left icon-black" (click)="navigateToHome()">
+        &#xe866;
+    </div>
+    <div class="right-icons">
+        <div class="help icon-black">&#xe8a9;</div>
+    </div>
+</div>
+<div class="content">
+    <div class="info">
+        <h1>Configure o valor do seu saldo</h1>
+        <h2>Aqui, você pode modificar o valor que será exibido na conta.
+            Este valor não é real, sendo utilizado apenas para fins de
+            demonstração do aplicativo.</h2>
+    </div>
+</div>
+
+<input type="text" [(ngModel)]="valor" (input)="transformAmount()">
+
+<div class="button-large">
+    <div class="button-rounded" style="background-color: rgb(130, 10, 209);">
+      <h1 style="color:white; font-size: 16px;">Definir saldo</h1>
+    </div>
+  </div>
+

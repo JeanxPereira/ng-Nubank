@@ -26,7 +26,7 @@
 
     <div class="carousel keen-slider" #sliderRef>
     <div class="carousel-item keen-slider__slide">
-        <div class="carousel-item-circle" onclick="pixArea()">
+        <div class="carousel-item-circle" (click)="navigateToPixArea()">
         <div class="pix icon-black">&#xe87f;</div>
         </div>
         <span>Àrea Pix</span>
@@ -109,7 +109,7 @@
     </div>
 </section>
 
-<section class="credit-card-invoice">
+<section class="credit-card-invoice" (click)="navigateToCreditCard()">
     <div class="content-title">
     <h1 class="title">Cartão de crédito</h1>
     <div class="chevron-right icon-black">&#xe86c;</div>

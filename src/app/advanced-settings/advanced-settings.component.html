@@ -16,7 +16,7 @@
       </div>
     </section>
     <section class="configure-account setting-option">
-      <div class="content-setting-option">
+      <div class="content-setting-option" (click)="navigateToConfigAccount()">
         <div class="money icon-black">&#xe857;</div>
         <h1>Configurar conta</h1>
         <div class="chevron-right icon-black">&#xe86c;</div>
@@ -32,8 +32,8 @@
 
     <h2 class="title-adv-settings">Aplicativo</h2>
 
-    <section class="edit-profile setting-option" onclick="configProfile()">
-      <div class="content-setting-option">
+    <section class="edit-profile setting-option">
+      <div class="content-setting-option" (click)="navigateToConfigProfile()">
         <div class="person icon-black">&#xe83e;</div>
         <h1>Editar dados do Perfil</h1>
         <div class="chevron-right icon-black">&#xe86c;</div>

@@ -13,4 +13,12 @@ export class AdvancedSettingsComponent {
   navigateToSettings() {
     this.router.navigate(['/settings']);
   }
+
+  navigateToConfigProfile() {
+    this.router.navigate(['/config-profile']);
+  }
+
+  navigateToConfigAccount() {
+    this.router.navigate(['/config-account']);
+  }
 }

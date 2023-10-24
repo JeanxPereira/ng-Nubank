@@ -8,6 +8,12 @@ import { AdvancedSettingsComponent } from './advanced-settings/advanced-settings
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CreditCardComponent } from './credit-card/credit-card.component';
 import { NgChartsModule } from 'ng2-charts';
+import { PixAreaComponent } from './pix-area/pix-area.component';
+import { ConfigProfileComponent } from './config-profile/config-profile.component';
+import { ConfigAccountComponent } from './config-account/config-account.component';
+import { ChangeBalanceComponent } from './change-balance/change-balance.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -15,11 +21,16 @@ import { NgChartsModule } from 'ng2-charts';
     SettingsComponent,
     HomeComponent,
     AdvancedSettingsComponent,
-    CreditCardComponent
+    CreditCardComponent,
+    PixAreaComponent,
+    ConfigProfileComponent,
+    ConfigAccountComponent,
+    ChangeBalanceComponent,
   ],
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     NgChartsModule,
   ],

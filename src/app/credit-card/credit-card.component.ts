@@ -1,5 +1,6 @@
-import { Component, ElementRef, ViewChild, OnInit } from "@angular/core";
+import { Component, ElementRef, ViewChild, Renderer2 } from "@angular/core";
 import KeenSlider, { KeenSliderInstance } from "keen-slider"
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-credit-card',
@@ -13,10 +14,16 @@ export class CreditCardComponent {
   @ViewChild("sliderRef") sliderRef!: ElementRef<HTMLElement>
   @ViewChild("carouselSliderRef") carouselSliderRef!: ElementRef<HTMLElement>
 
+  prepareRoute(outlet: any) {
+    return outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation;
+  }
+
   currentSlide: number = 0
   dotHelper: Array<Number> = []
   slider?: KeenSliderInstance;
   carouselSlider?: KeenSliderInstance;
+
+  constructor(private router: Router, private renderer: Renderer2, private el: ElementRef) {}
 
   ngAfterViewInit() {
     this.slider = new KeenSlider(this.sliderRef.nativeElement, {
@@ -44,5 +51,8 @@ export class CreditCardComponent {
   ngOnDestroy() {
     if (this.slider) this.slider.destroy()
   }
+
+  navigateToHome() {
+    this.router.navigate(['/home']);}
 
 }

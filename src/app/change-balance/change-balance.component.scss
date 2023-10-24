@@ -1,0 +1,43 @@
+.header-settings {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 24px;
+    margin-bottom: 40px;
+}
+
+.info {
+    h1 {
+        padding-left: 20px;
+        padding-right: 90px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    h2 {
+        padding-left: 20px;
+        padding-right: 30px;
+        font-size: 18px;
+        font-weight: normal;
+        color: rgb(90, 90, 90);
+    }
+}
+
+input {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 550;
+    height: 40px;
+    width: 350px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+    caret-color: rgb(130, 10, 209);
+
+    margin-bottom: 450px;
+  }
+
+.button-large {
+    margin: 20px;
+}

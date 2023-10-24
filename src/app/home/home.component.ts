@@ -59,6 +59,14 @@ export class HomeComponent {
     this.router.navigate(['/settings']);
   }
 
+  navigateToCreditCard() {
+    this.router.navigate(['/credit-card']);
+  }
+
+  navigateToPixArea() {
+    this.router.navigate(['/pix-area']);
+  }
+
   isHidden = false;
 
   toggleEye() {

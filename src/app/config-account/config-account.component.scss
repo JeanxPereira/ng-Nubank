@@ -1,0 +1,88 @@
+.header-settings-small {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 24px;
+    margin-bottom: 40px;
+}
+
+.small-title {
+    margin-bottom: 10px;
+    }
+
+.header-settings .chevron-left {
+    position: absolute;
+    left: 0;
+}
+
+.chevron-right {
+    margin-left: auto;
+  }
+
+.id-h2 {
+    text-align: right;
+    color: rgb(92, 92, 92);
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: auto;
+  }
+
+  .title-adv-settings {
+    color: rgb(88, 88, 88);
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 24px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.header-settings {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 24px;
+    margin-bottom: 10px;
+
+    h1 {
+        text-align: center;
+        margin: 0;
+        font-size: 22px;
+    }
+}
+
+.header-settings .chevron-left {
+    position: absolute;
+    left: 0;
+  }
+
+
+  .content-setting-option {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  
+    h1 {
+        padding-left: 20px;
+        font-size: 18px;
+    }
+  }
+  
+  .content-setting-option-small {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin-right: 20px;
+  
+    h1 {
+        padding-left: 30px;
+        font-size: 18px;
+    }
+  }
+  
