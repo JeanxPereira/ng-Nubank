@@ -77,6 +77,16 @@
     width: calc(100% - 28px) !important;
     padding-bottom: 24px;
   }
+
+  .discover-cards {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 28px;
+    width: calc(100% - 28px) !important;
+    padding-bottom: 24px;
+  }
   
   .tips {
     height: 88px;
